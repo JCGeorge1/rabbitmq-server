@@ -129,7 +129,7 @@ endef
 
 LOCAL_DEPS = sasl mnesia os_mon inets compiler syntax_tools
 BUILD_DEPS = rabbitmq_cli syslog
-DEPS = ranch lager rabbit_common sysmon_handler
+DEPS = ranch lager rabbit_common sysmon_handler stdout_formatter
 TEST_DEPS = rabbitmq_ct_helpers rabbitmq_ct_client_helpers amqp_client meck proper
 
 dep_syslog = git https://github.com/schlagert/syslog 3.4.5
